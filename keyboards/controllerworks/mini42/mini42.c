@@ -33,7 +33,7 @@ bool render_status(void) {
 
     switch (get_highest_layer(layer_state)) {
         case 0:
-            oled_write_P(PSTR("BASE\n"), false);
+            oled_write_P(PSTR("Base\n"), false);
             break;
         case 1:
             oled_write_P(PSTR("LOWER\n"), false);
@@ -42,32 +42,26 @@ bool render_status(void) {
             oled_write_P(PSTR("RAISE\n"), false);
             break;
         case 3:
-            oled_write_P(PSTR("ADJUST\n"), false);
+            oled_write_P(PSTR("Button\n"), false);
             break;    
         case 4:
-            oled_write_ln_P(PSTR("Layer 04"), false);
+            oled_write_ln_P(PSTR("Navigation"), false);
             break;  
         case 5:
-            oled_write_ln_P(PSTR("Layer 05"), false);
+            oled_write_ln_P(PSTR("Mouse"), false);
             break;  
         case 6:
-            oled_write_ln_P(PSTR("Layer 06"), false);
+            oled_write_ln_P(PSTR("Media"), false);
             break;  
         case 7:
-            oled_write_ln_P(PSTR("Layer 07"), false);
+            oled_write_ln_P(PSTR("Numbers"), false);
             break;  
         case 8:
-            oled_write_ln_P(PSTR("Layer 08"), false);
+            oled_write_ln_P(PSTR("Symbols"), false);
             break;  
         case 9:
-            oled_write_ln_P(PSTR("Layer 09"), false);
-            break;  
-        case 10:
-            oled_write_ln_P(PSTR("Layer 10"), false);
-            break;  
-        case 11:
-            oled_write_ln_P(PSTR("Layer 11"), false);
-            break;          
+            oled_write_ln_P(PSTR("Fun"), false);
+            break;         
         default:
             // Or use the write_ln shortcut over adding '\n' to the end of your string
             oled_write_ln_P(PSTR("Undefined"), false);
