@@ -77,9 +77,6 @@ bool render_status(void) {
 }
 
 bool oled_task_kb(void) {
-    if (!oled_task_user()) {
-        return false;
-    }
     render_status();  // Renders the current keyboard state (layer, lock, caps, scroll, etc)
     return false;
 }
