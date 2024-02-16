@@ -5,3 +5,27 @@
 
 #pragma once
 
+#define XXX KC_NO
+
+#define MIRYOKU_LAYER_LIST \
+MIRYOKU_X(BASE,   "Base") \
+MIRYOKU_X(EXTRA,  "Extra") \
+MIRYOKU_X(TAP,    "Tap") \
+MIRYOKU_X(BUTTON, "Button") \
+MIRYOKU_X(NAV,    "Nav") \
+MIRYOKU_X(MOUSE,  "Mouse") \
+MIRYOKU_X(MEDIA,  "Media") \
+MIRYOKU_X(NUM,    "Num") \
+MIRYOKU_X(SYM,    "Sym") \
+MIRYOKU_X(FUN,    "Fun") \
+MIRYOKU_X(GAME,  "Game")
+
+#define MIRYOKU_LAYER_GAME \
+XXX,           XXX,              KC_W,           XXX,              XXX,           XXX,              XXX,   XXX,  XXX,    XXX,     \
+XXX,           KC_D,             KC_S,           KC_D,             XXX,           XXX,              XXX,   XXX,  XXX,    XXX,             \
+XXX,           XXX,              XXX,            XXX,              XXX,           XXX,              XXX,   XXX,  XXX,    XXX,              \
+XXX,           XXX,              XXX,            XXX,              XXX,           XXX,              XXX,   XXX,  XXX,    XXX
+
+#define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
+
+#define U_GAME   10
