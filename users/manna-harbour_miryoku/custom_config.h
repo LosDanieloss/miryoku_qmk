@@ -27,5 +27,3 @@ XXX,           XXX,              XXX,            XXX,              XXX,         
 XXX,           XXX,              XXX,            XXX,              XXX,           XXX,              XXX,   XXX,  XXX,    XXX
 
 #define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
-
-#define U_GAME   10
