@@ -71,7 +71,10 @@ bool render_status(void) {
             break;  
         case 9:
             oled_write_ln_P(PSTR("Fun"), false);
-            break;         
+            break;    
+        case 10:
+            oled_write_ln_P(PSTR("Game"), false);
+            break;  
         default:
             // Or use the write_ln shortcut over adding '\n' to the end of your string
             oled_write_ln_P(PSTR("Undefined"), false);
