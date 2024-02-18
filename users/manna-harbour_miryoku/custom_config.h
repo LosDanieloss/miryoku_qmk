@@ -21,9 +21,9 @@ MIRYOKU_X(FUN,    "Fun") \
 MIRYOKU_X(GAME,  "Game")
 
 #define MIRYOKU_LAYER_GAME \
-XXX,   XXX,    KC_W,  XXX,     XXX,                   XXX,   XXX,       XXX,  XXX,    XXX,     \
-XXX,   KC_A,   KC_S,  KC_D,    XXX,                   XXX,   XXX,       XXX,  XXX,    XXX,             \
-XXX,   XXX,    XXX,   XXX,     XXX,                   XXX,   XXX,       XXX,  XXX,    XXX,              \
-XXX,   XXX,    XXX,   KC_SPC,  XXX,                   XXX,   KC_RSFT,   XXX,  XXX,    XXX
+XXX,   KC_Q,    KC_W,  KC_E,     XXX,                   XXX,   XXX,       KC_UP,    XXX,         XXX,     \
+XXX,   KC_A,    KC_S,  KC_D,     XXX,                   XXX,   KC_LEFT,   KC_DOWN,  KC_RIGHT,    XXX,             \
+XXX,   XXX,     XXX,   XXX,      XXX,                   XXX,   XXX,       XXX,      XXX,         XXX,              \
+XXX,   XXX,     XXX,   KC_SPC,   XXX,                   XXX,   KC_RSFT,   XXX,      XXX,         XXX
 
 #define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
