@@ -18,12 +18,12 @@ MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
-MIRYOKU_X(GAME,  "Game")
+MIRYOKU_X(GAME,   "Game")
 
 #define MIRYOKU_LAYER_GAME \
-XXX,   KC_Q,    KC_W,  KC_E,     XXX,                   XXX,   XXX,       KC_UP,    XXX,         XXX,     \
-XXX,   KC_A,    KC_S,  KC_D,     XXX,                   XXX,   KC_LEFT,   KC_DOWN,  KC_RIGHT,    XXX,             \
-XXX,   XXX,     XXX,   XXX,      XXX,                   XXX,   XXX,       XXX,      XXX,         XXX,              \
-XXX,   XXX,     XXX,   KC_SPC,   XXX,                   XXX,   KC_RSFT,   XXX,      XXX,         XXX
+XXX,       KC_Q,    KC_W,  KC_E,     XXX,                   XXX,   XXX,       KC_UP,    XXX,         XXX,     \
+XXX,       KC_A,    KC_S,  KC_D,     XXX,                   XXX,   KC_LEFT,   KC_DOWN,  KC_RIGHT,    XXX,             \
+KC_LSFT,   XXX,     XXX,   XXX,      XXX,                   XXX,   XXX,       XXX,      XXX,         XXX,              \
+KC_LSFT,   XXX,     XXX,   KC_SPC,   XXX,                   XXX,   KC_RSFT,   XXX,      XXX,         XXX
 
 #define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
