@@ -73,6 +73,9 @@ bool render_status(void) {
             oled_write_ln_P(PSTR("Fun"), false);
             break;    
         case 10:
+            oled_write_ln_P(PSTR("Rocket"), false);
+            break;    
+        case 11:
             oled_write_ln_P(PSTR("Game"), false);
             break;  
         default:
@@ -92,9 +95,6 @@ bool render_status(void) {
 bool oled_task_user(void) {    
     if (is_keyboard_master()) {
         render_status();  // Renders the current keyboard state (layer, lock, caps, scroll, etc)
-    } else {
-        render_logo();  // Renders a static logo
-        oled_scroll_left();  // Turns on scrolling
     }
     return false;
 }
