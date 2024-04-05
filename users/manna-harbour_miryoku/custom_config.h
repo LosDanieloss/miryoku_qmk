@@ -33,4 +33,5 @@ KC_A,    KC_S,  KC_D,     KC_F,      KC_G                   KC_H,      KC_J,    
 KC_Z,    KC_X,  KC_C,     KC_V,      KC_B,                  KC_N,      KC_M,      XXX,      KC_PMNS,    KC_PPLS, \
 XXX,     XXX,   KC_ESC,   KC_LSFT,   KC_SPC,                KC_ENT,    KC_RSFT,   KC_LCTL,  XXX,        XXX
 
+#define MIRYOKU_LAYERMAPPING_ROCKET MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
