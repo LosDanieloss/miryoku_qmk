@@ -18,10 +18,10 @@ MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
-MIRYOKU_X(RL,     "Rocket") \
+MIRYOKU_X(ROCKET, "Rocket") \
 MIRYOKU_X(GAME,   "Game") 
 
-#define MIRYOKU_LAYER_RL \
+#define MIRYOKU_LAYER_ROCKET \
 XXX,       KC_Q,    KC_W,    KC_E,     XXX,                 XXX,      XXX,       KC_UP,    XXX,         XXX,          \
 XXX,       KC_A,    KC_S,    KC_D,     XXX,                 XXX,      KC_LEFT,   KC_DOWN,  KC_RIGHT,    XXX,          \
 KC_LSFT,   XXX,     XXX,     XXX,      XXX,                 XXX,      XXX,       XXX,      XXX,         LSFT(KC_TAB),          \
