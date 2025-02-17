@@ -1,7 +1,7 @@
 # Copyright 2021 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Example contra'
+name: 'Build Example Controller Works mini42'
 on:
   - workflow_dispatch
 jobs:
