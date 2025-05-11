@@ -1,6 +1,7 @@
 #pragma once
 
 #define LAYER_STATE_32BIT
+#define DYNAMIC_KEYMAP_LAYER_COUNT 22 // Number of layers defined in MIRYOKU_LAYER_LIST for VIA
 
 #define XXX KC_NO
 
