@@ -5,27 +5,27 @@
 #define XXX KC_NO
 
 #define MIRYOKU_LAYER_LIST \
-MIRYOKU_X(BASE,   "Base") \
-MIRYOKU_X(EXTRA,  "Extra") \
-MIRYOKU_X(TAP,    "Tap") \
-MIRYOKU_X(BUTTON, "Button") \
-MIRYOKU_X(NAV,    "Nav") \
-MIRYOKU_X(MOUSE,  "Mouse") \
-MIRYOKU_X(MEDIA,  "Media") \
-MIRYOKU_X(NUM,    "Num") \
-MIRYOKU_X(SYM,    "Sym") \
-MIRYOKU_X(FUN,    "Fun") \
+MIRYOKU_X(BASE,     "Base") \
+MIRYOKU_X(EXTRA,    "Extra") \
+MIRYOKU_X(TAP,      "Tap") \
+MIRYOKU_X(BUTTON,   "Button") \
+MIRYOKU_X(NAV,      "Nav") \
+MIRYOKU_X(MOUSE,    "Mouse") \
+MIRYOKU_X(MEDIA,    "Media") \
+MIRYOKU_X(NUM,      "Num") \
+MIRYOKU_X(SYM,      "Sym") \
+MIRYOKU_X(FUN,      "Fun") \
 MIRYOKU_X(TIMEWAYS, "Timeways") \
-MIRYOKU_X(GAME,   "Game") \
-MIRYOKU_X(WOW, "WoW") \
-MIRYOKU_X(NW, "New World") \
-MIRYOKU_X(ROCKET, "Rocket") \
-MIRYOKU_X(LO5,   "Open 5") \
-MIRYOKU_X(RO1,   "Open 1") \
-MIRYOKU_X(RO2,   "Open 2") \
-MIRYOKU_X(RO3,   "Open 3") \
-MIRYOKU_X(RO4,   "Open 4") \
-MIRYOKU_X(RO5,   "Open 5")
+MIRYOKU_X(GAME,     "Game") \
+MIRYOKU_X(WOW,      "WoW") \
+MIRYOKU_X(NW,       "New World") \
+MIRYOKU_X(ROCKET,   "Rocket") \
+MIRYOKU_X(LO5,      "Open 5") \
+MIRYOKU_X(RO1,      "Open 1") \
+MIRYOKU_X(RO2,      "Open 2") \
+MIRYOKU_X(RO3,      "Open 3") \
+MIRYOKU_X(RO4,      "Open 4") \
+MIRYOKU_X(RO5,      "Open 5")
 
 #define MIRYOKU_LAYER_TIMEWAYS \
 XXX,        XXX,        XXX,        XXX,        XXX,                        XXX,        XXX,        XXX,        XXX,        XXX, \
@@ -40,15 +40,15 @@ KC_Z,       KC_X,       KC_C,       KC_V,       KC_B,                       KC_N
 XXX,        XXX,        KC_ESC,     KC_SPC,     KC_LSFT,                    KC_ENT,     KC_RSFT,    KC_LCTL,    XXX,        XXX
 
 #define MIRYOKU_LAYER_WOW \
-XXX,        KC_Q,       KC_W,       KC_E,       XXX,                        XXX,        XXX,        KC_UP,      XXX,        XXX, \
-XXX,        KC_A,       KC_S,       KC_D,       XXX,                        KC_H,       KC_J,       KC_J,       KC_L,       LGUI(LSFT(KC_S)), \
-KC_Z,       KC_X,       KC_C,       KC_V,       KC_B,                       KC_N,       KC_M,       XXX,        KC_PMNS,    KC_PPLS, \
+KC_1,       KC_2,       KC_W,       KC_F1,      KC_F2,                      KC_K,       KC_P,       KC_M,       KC_J,       XXX, \
+KC_3,       KC_A,       KC_S,       KC_D,       KC_F3,                      KC_C,       KC_B,       KC_I,       KC_U,       XXX, \
+KC_4,       KC_5,       KC_Z,       KC_F4,      KC_F5,                      KC_Y,       LSFT(KC_J), LSFT(KC_P), KC_PMNS,    XXX, \
 XXX,        XXX,        KC_ESC,     KC_SPC,     KC_LSFT,                    KC_ENT,     KC_RSFT,    KC_LCTL,    XXX,        XXX
 
 #define MIRYOKU_LAYER_NW \
-XXX,        KC_Q,       KC_W,       KC_E,       XXX,                        XXX,        XXX,        KC_UP,      XXX,        XXX, \
-XXX,        KC_A,       KC_S,       KC_D,       XXX,                        KC_H,       KC_J,       KC_J,       KC_L,       LGUI(LSFT(KC_S)), \
-KC_Z,       KC_X,       KC_C,       KC_V,       KC_B,                       KC_N,       KC_M,       XXX,        KC_PMNS,    KC_PPLS, \
+XXX,        XXX,        KC_W,       XXX,        XXX,                        XXX,        XXX,        XXX,        XXX,        XXX, \
+XXX,        KC_A,       KC_S,       KC_D,       XXX,                        XXX,        XXX,        XXX,        XXX,        XXX, \
+XXX,        XXX,        XXX,        XXX,        XXX,                        XXX,        XXX,        XXX,        XXX,        XXX, \
 XXX,        XXX,        KC_ESC,     KC_SPC,     KC_LSFT,                    KC_ENT,     KC_RSFT,    KC_LCTL,    XXX,        XXX
 
 #define MIRYOKU_LAYER_ROCKET \
