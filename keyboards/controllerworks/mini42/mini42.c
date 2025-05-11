@@ -36,10 +36,10 @@ bool render_status(void) {
             oled_write_P(PSTR("Base\n"), false);
             break;
         case 1:
-            oled_write_P(PSTR("LOWER\n"), false);
+            oled_write_P(PSTR("Extra\n"), false);
             break;
         case 2:
-            oled_write_P(PSTR("RAISE\n"), false);
+            oled_write_P(PSTR("Tap\n"), false);
             break;
         case 3:
             oled_write_P(PSTR("Button\n"), false);
@@ -63,11 +63,38 @@ bool render_status(void) {
             oled_write_ln_P(PSTR("Fun"), false);
             break;    
         case 10:
-            oled_write_ln_P(PSTR("Rocket"), false);
-            break;    
+            oled_write_ln_P(PSTR("TimeWays"), false);
+            break;
         case 11:
             oled_write_ln_P(PSTR("Game"), false);
-            break;  
+            break;
+        case 12:
+            oled_write_ln_P(PSTR("WoW"), false);
+            break;
+        case 13:
+            oled_write_ln_P(PSTR("New World"), false);
+            break;
+        case 14:
+            oled_write_ln_P(PSTR("Rocket"), false);
+            break;
+        case 15:
+            oled_write_ln_P(PSTR("Left Open 5"), false);
+            break;
+        case 16:
+            oled_write_ln_P(PSTR("Right Open 1"), false);
+            break;
+        case 17:
+            oled_write_ln_P(PSTR("Right Open 2"), false);
+            break;
+        case 18:
+            oled_write_ln_P(PSTR("Right Open 3"), false);
+            break;
+        case 19:
+            oled_write_ln_P(PSTR("Right Open 4"), false);
+            break;
+        case 20:
+            oled_write_ln_P(PSTR("Right Open 5"), false);
+            break;
         default:
             // Or use the write_ln shortcut over adding '\n' to the end of your string
             oled_write_ln_P(PSTR("Undefined"), false);
