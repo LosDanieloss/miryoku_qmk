@@ -1,5 +1,7 @@
 #pragma once
 
+#define LAYER_STATE_32BIT
+
 #define XXX KC_NO
 
 #define MIRYOKU_LAYER_LIST \
@@ -55,7 +57,7 @@ XXX,        KC_A,       KC_S,       KC_D,       XXX,                        XXX,
 KC_LSFT,    XXX,        XXX,        XXX,        XXX,                        XXX,        XXX,        XXX,        XXX,        LSFT(KC_TAB), \
 XXX,        XXX,        KC_ESC,     KC_SPC,     XXX,                        KC_ENT,     KC_RSFT,    XXX,        XXX,        XXX
 
-#define MIRYOKU_LAYER_LO1 \
+#define MIRYOKU_LAYER_LO5 \
 XXX,        XXX,        XXX,        XXX,        XXX,                        XXX,        XXX,        XXX,        XXX,        XXX, \
 XXX,        XXX,        XXX,        XXX,        XXX,                        XXX,        XXX,        XXX,        XXX,        XXX, \
 XXX,        XXX,        XXX,        XXX,        XXX,                        XXX,        XXX,        XXX,        XXX,        XXX, \
@@ -96,7 +98,7 @@ XXX,        XXX,        XXX,        XXX,        XXX,                        XXX,
 #define MIRYOKU_LAYERMAPPING_WOW MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_NW MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_ROCKET MIRYOKU_MAPPING
-#define MIRYOKU_LAYERMAPPING_LO1 MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_LO5 MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_RO1 MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_RO2 MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_RO3 MIRYOKU_MAPPING
