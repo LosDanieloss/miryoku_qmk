@@ -16,6 +16,7 @@
  */
 
 #include "quantum.h"
+#include "users/manna-harbour_miryoku/manna-harbour_miryoku.h"
 
 #ifdef OLED_ENABLE
 
@@ -31,73 +32,12 @@ bool render_status(void) {
     // Host Keyboard Layer Status
     oled_write_P(PSTR("Layer: "), false);
 
-    switch (get_highest_layer(layer_state)) {
-        case 0:
-            oled_write_P(PSTR("Base\n"), false);
-            break;
-        case 1:
-            oled_write_P(PSTR("Extra\n"), false);
-            break;
-        case 2:
-            oled_write_P(PSTR("Tap\n"), false);
-            break;
-        case 3:
-            oled_write_P(PSTR("Button\n"), false);
-            break;    
-        case 4:
-            oled_write_ln_P(PSTR("Navigation"), false);
-            break;  
-        case 5:
-            oled_write_ln_P(PSTR("Mouse"), false);
-            break;  
-        case 6:
-            oled_write_ln_P(PSTR("Media"), false);
-            break;  
-        case 7:
-            oled_write_ln_P(PSTR("Numbers"), false);
-            break;  
-        case 8:
-            oled_write_ln_P(PSTR("Symbols"), false);
-            break;  
-        case 9:
-            oled_write_ln_P(PSTR("Fun"), false);
-            break;    
-        case 10:
-            oled_write_ln_P(PSTR("TimeWays"), false);
-            break;
-        case 11:
-            oled_write_ln_P(PSTR("Game"), false);
-            break;
-        case 12:
-            oled_write_ln_P(PSTR("WoW"), false);
-            break;
-        case 13:
-            oled_write_ln_P(PSTR("New World"), false);
-            break;
-        case 14:
-            oled_write_ln_P(PSTR("Rocket"), false);
-            break;
-        case 15:
-            oled_write_ln_P(PSTR("Left Open 5"), false);
-            break;
-        case 16:
-            oled_write_ln_P(PSTR("Right Open 1"), false);
-            break;
-        case 17:
-            oled_write_ln_P(PSTR("Right Open 2"), false);
-            break;
-        case 18:
-            oled_write_ln_P(PSTR("Right Open 3"), false);
-            break;
-        case 19:
-            oled_write_ln_P(PSTR("Right Open 4"), false);
-            break;
-        case 20:
-            oled_write_ln_P(PSTR("Right Open 5"), false);
-            break;
-        default:
-            // Or use the write_ln shortcut over adding '\n' to the end of your string
-            oled_write_ln_P(PSTR("Undefined"), false);
+    uint8_t current_layer = get_highest_layer(layer_state);
+
+    if (current_layer < miryoku_layer_count) {
+        oled_write_ln_P(PSTR(miryoku_layer_names[current_layer]), false);
+    } else {
+        oled_write_ln_P(PSTR("Undefined"), false);
     }
 
     // Host Keyboard LED Status

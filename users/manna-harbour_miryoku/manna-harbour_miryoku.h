@@ -14,6 +14,19 @@ MIRYOKU_LAYER_LIST
 #undef MIRYOKU_X
 };
 
+// Array of layer name strings
+// These strings are from the second argument of MIRYOKU_X in MIRYOKU_LAYER_LIST
+static const char* const miryoku_layer_names[] = {
+#define MIRYOKU_X(LAYER, STRING) STRING,
+MIRYOKU_LAYER_LIST
+#undef MIRYOKU_X
+};
+
+// Count of defined Miryoku layers
+#define MIRYOKU_X(LAYER, STRING) +1
+static const uint8_t miryoku_layer_count = (0 MIRYOKU_LAYER_LIST);
+#undef MIRYOKU_X
+
 #define U_MACRO_VA_ARGS(macro, ...) macro(__VA_ARGS__)
 
 #if !defined (MIRYOKU_MAPPING)
